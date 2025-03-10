@@ -22,3 +22,5 @@ app.post("/fub-webhook", (req, res) => {
         res.status(500).send("Error processing webhook.");
     }
 })
+
+app.listen(PORT, () => console.log(`🚀 Webhook server running on port ${PORT}`));
